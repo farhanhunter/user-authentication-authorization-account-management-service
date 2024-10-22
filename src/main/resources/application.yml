@@ -1,0 +1,14 @@
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finance_db
+    username: finance_user
+    password: finance_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+security:
+  jwt:
+    secret: "dadc5f60a9a7c5d4b97ffcbebd1977631eaa553ff38d2f3785e76954f04e0ff4"
